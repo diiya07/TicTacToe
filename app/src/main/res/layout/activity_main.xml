@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#000000">
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="Turn: X"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/neon" />
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/statusTextView"
+        android:layout_above="@+id/resetButton"
+        android:layout_marginTop="32dp"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_weight="1"
+        android:rowOrderPreserved="false">
+        <Button
+            android:id="@+id/button1"
+            style="@style/TicTacToeButton" />
+        <Button
+            android:id="@+id/button2"
+            style="@style/TicTacToeButton" />
+        <Button
+            android:id="@+id/button3"
+            style="@style/TicTacToeButton" />
+        <Button
+            android:id="@+id/button4"
+            style="@style/TicTacToeButton" />
+        <Button
+            android:id="@+id/button5"
+            style="@style/TicTacToeButton" />
+        <Button
+            android:id="@+id/button6"
+            style="@style/TicTacToeButton" />
+        <Button
+            android:id="@+id/button7"
+            style="@style/TicTacToeButton" />
+        <Button
+            android:id="@+id/button8"
+            style="@style/TicTacToeButton" />
+        <Button
+            android:id="@+id/button9"
+            style="@style/TicTacToeButton" />
+    </GridLayout>
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#8A2BE2"
+        android:text="Reset Game"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:fontFamily="@font/neon"
+        android:layout_marginTop="32dp" />
+</RelativeLayout>
+
